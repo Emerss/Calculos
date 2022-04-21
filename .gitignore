@@ -1,52 +1,23 @@
-# Prerequisites
-*.d
+#include <stdio.h>
+#include <stdlib.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+int main()
+{
+    int num1, num2, soma, subtracao, multi, div;
 
-# Linker output
-*.ilk
-*.map
-*.exp
+    printf("Calculadora\n");
+    printf("Digite os 2 numeros: ");
+    scanf("%i%i", &num1, &num2);
 
-# Precompiled Headers
-*.gch
-*.pch
+    soma            = num1 + num2;
+    subtracao       = num1 - num2;
+    multi           = num1 * num2;
+    div             = num1 / num2;
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+    printf( "A soma e: %i \n", soma );
+    printf( "A subtracao e: %i \n", subtracao );
+    printf( "O produto e: %i \n", multi );
+    printf( "A divisao e: %i \n", div );
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+    return 0;
+}
